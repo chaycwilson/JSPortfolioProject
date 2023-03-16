@@ -22,7 +22,21 @@ const MainObj = {
                    "What do you call a fake noodle? An impasta.",
                    "Why do bees hum? Because they don't know the words."
 
-                    ]
+                    ],
+    asciiArt: [ "|.-----.|",
+                 "||x . x||",
+                 "||_.-._||",
+                 "`--)-(--`",
+                "__[=== o]___",
+               "|:::::::::::|",
+               "-=========-()" ]
+}
+
+//Loop through the ascii art
+const getAscii = (arr) => {
+    for (let i = 0 ; i < arr.length ; i++ ) {
+        console.log(arr[i]);
+    }
 }
 
 //picking at an inspirationalMessage, dailyTask and jokeOfTheDay at random
@@ -35,4 +49,4 @@ const randMessage = (arr) => {
 console.log("Inspirational message: " , randMessage(MainObj.inspirationalMessage));
 console.log("Daily task: " , randMessage(MainObj.dailyTask));
 console.log("Your joke of the day: " , randMessage(MainObj.jokeOfTheDay));
-
+getAscii(MainObj.asciiArt)
